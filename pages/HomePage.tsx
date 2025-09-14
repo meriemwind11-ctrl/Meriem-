@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
                 <div className="relative z-10">
                     <h1 className="text-4xl md:text-5xl font-bold text-accent">Meriem's Market</h1>
                     <p className="mt-4 text-lg md:text-xl text-text-primary dark:text-dark-text-primary max-w-2xl mx-auto">
-                        Des produits authentiques, livrés chez vous.
+                        votre marché en ligne , simple et proche de vous ♥ .
                     </p>
                     <Link to="/products">
                         <button className="mt-8 bg-accent text-white py-3 px-8 rounded-full font-semibold hover:bg-opacity-90 transition-transform duration-300 transform hover:scale-105">

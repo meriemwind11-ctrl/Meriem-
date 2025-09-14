@@ -2,15 +2,19 @@
 import type { Product, Category } from '../types';
 
 export const categories: Category[] = [
-  { id: 'beauty', name: 'Beauté', icon: '💄' },
-  { id: 'home', name: 'Maison', icon: '🏡' },
-  { id: 'accessories', name: 'Accessoires', icon: '👒' },
-  { id: 'wellness', name: 'Bien-être', icon: '🌿' },
+  { id: 'Clothing & Fashion', name: 'Vêtements & Mode', icon: '🛍️' },
+  { id: 'Electronics & Computer Science', name: 'Électronique & Informatique', icon: '💻' },
+  { id: 'Home & Kitchen', name: 'Maison & Cuisine', icon: '🏡' },
+  { id: 'Books & Education', name: 'Livres & Éducation', icon: '📚✏️' },
+  { id: 'Beauty & Health', name: 'Beauté & Santé', icon: '💄💊' },
+  { id: 'Sports', name: 'Sports', icon: '⚽' },
+  { id: 'Automobile & Motorcycle', name: 'Automobile & Moto', icon: '🚗🛵' },
+  { id: 'free', name: 'Gratuit', icon: '🤲' },
 ];
 
 export const products: Product[] = [
   {
-    id: 1,
+    id: 9,
     name: 'Savon Artisanal à la Lavande',
     price: 8.50,
     category: 'Beauté',
@@ -30,7 +34,7 @@ export const products: Product[] = [
     description: 'Créez une ambiance chaleureuse avec cette bougie en cire de soja naturelle, parfumée au bois de santal.'
   },
   {
-    id: 3,
+    id: 5,
     name: 'Sac Tote Bag en Coton Bio',
     price: 15.90,
     category: 'Accessoires',
@@ -40,7 +44,7 @@ export const products: Product[] = [
     description: 'Un sac réutilisable, durable et stylé pour vos courses et vos sorties quotidiennes.'
   },
   {
-    id: 4,
+    id: 9,
     name: 'Huile Sèche Hydratante Corps et Cheveux',
     price: 28.00,
     category: 'Beauté',
