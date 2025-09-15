@@ -5,7 +5,8 @@ import { useProducts } from '../context/ProductContext';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 import { useToast } from '../context/ToastContext';
-import { ShoppingCart, Heart, Star, ChevronLeft } from 'lucide-react';
+// FIX: Replaced unavailable Pinterest icon with Share2 to fix import error.
+import { ShoppingCart, Heart, Star, ChevronLeft, Facebook, Twitter, Share2 } from 'lucide-react';
 
 const ProductDetailPage: React.FC = () => {
     const { id } = useParams<{ id: string }>();
@@ -30,6 +31,18 @@ const ProductDetailPage: React.FC = () => {
         );
     }
     
+    // Social Sharing Logic
+    const productUrl = window.location.href;
+    const shareText = `Découvrez ce super produit : ${product.name} sur Meriem's Market !`;
+    
+    const encodedUrl = encodeURIComponent(productUrl);
+    const encodedText = encodeURIComponent(shareText);
+    const encodedImageUrl = encodeURIComponent(product.imageUrl);
+
+    const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+    const twitterShareUrl = `https://twitter.com/intent/tweet?url=${encodedUrl}&text=${encodedText}`;
+    const pinterestShareUrl = `https://pinterest.com/pin/create/button/?url=${encodedUrl}&media=${encodedImageUrl}&description=${encodedText}`;
+
     const handleAddToCart = () => {
         addToCart(product);
         showToast('✅ Ajouté au panier !', 'success');
@@ -89,6 +102,39 @@ const ProductDetailPage: React.FC = () => {
                             <Heart size={20} fill={isInWishlist(product.id) ? '#DC3545' : 'none'} className={`mr-2 ${isInWishlist(product.id) ? 'text-alert' : ''}`} />
                             {isInWishlist(product.id) ? 'Dans la wishlist' : 'Ajouter à la wishlist'}
                         </button>
+                    </div>
+
+                     <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+                      <h3 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">Partager ce produit</h3>
+                      <div className="flex items-center gap-3">
+                        <a 
+                            href={facebookShareUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Partager sur Facebook" 
+                            className="flex items-center justify-center w-11 h-11 bg-[#1877F2] text-white rounded-full hover:opacity-90 transition-opacity"
+                        >
+                          <Facebook size={22} />
+                        </a>
+                        <a 
+                            href={twitterShareUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Partager sur Twitter" 
+                            className="flex items-center justify-center w-11 h-11 bg-[#1DA1F2] text-white rounded-full hover:opacity-90 transition-opacity"
+                        >
+                          <Twitter size={22} />
+                        </a>
+                        <a 
+                            href={pinterestShareUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            aria-label="Partager sur Pinterest" 
+                            className="flex items-center justify-center w-11 h-11 bg-[#E60023] text-white rounded-full hover:opacity-90 transition-opacity"
+                        >
+                           <Share2 size={22} />
+                        </a>
+                      </div>
                     </div>
                 </div>
             </div>

@@ -15,8 +15,8 @@ export const categories: Category[] = [
 export const products: Product[] = [
   {
     id: 9,
-    name: 'Savon Artisanal à la Lavande',
-    price: 8.50,
+    name: 'maaaazzaaaaaaal',
+    price: 0.00,
     category: 'Beauté',
     imageUrl: 'https://picsum.photos/seed/lavender/400/400',
     isFeatured: true,
@@ -25,8 +25,8 @@ export const products: Product[] = [
   },
   {
     id: 2,
-    name: 'Bougie Parfumée au Bois de Santal',
-    price: 22.00,
+    name: 'mazzaaaaaaaaaaal',
+    price: 0.00,
     category: 'Maison',
     imageUrl: 'https://picsum.photos/seed/sandalwood/400/400',
     isFeatured: true,
@@ -35,8 +35,8 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: 'Sac Tote Bag en Coton Bio',
-    price: 15.90,
+    name: 'maaaaazzaaaaaaal',
+    price: 0.00,
     category: 'Accessoires',
     imageUrl: 'https://picsum.photos/seed/totebag/400/400',
     isFeatured: false,
@@ -45,8 +45,8 @@ export const products: Product[] = [
   },
   {
     id: 9,
-    name: 'Huile Sèche Hydratante Corps et Cheveux',
-    price: 28.00,
+    name: 'maazzaaaaaaal',
+    price: 0.00,
     category: 'Beauté',
     imageUrl: 'https://picsum.photos/seed/dryoil/400/400',
     isFeatured: true,
@@ -55,8 +55,8 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: 'Diffuseur d\'Huiles Essentielles Ultrasonique',
-    price: 45.00,
+    name: 'maaazzaaaaaaal',
+    price: 0.00,
     category: 'Maison',
     imageUrl: 'https://picsum.photos/seed/diffuser/400/400',
     isFeatured: false,
@@ -65,8 +65,9 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: 'Gourde Isotherme en Inox',
-    price: 25.50,
+    name: 'mazzaaaal',
+    // FIX: Corrected invalid number format for price.
+    price: 0.00,
     category: 'Accessoires',
     imageUrl: 'https://picsum.photos/seed/bottle/400/400',
     isFeatured: false,
@@ -75,8 +76,8 @@ export const products: Product[] = [
   },
   {
     id: 7,
-    name: 'Sérum Visage à la Vitamine C',
-    price: 35.00,
+    name: 'mazaaaaaaaaaaal',
+    price: 0.00,
     category: 'Beauté',
     imageUrl: 'https://picsum.photos/seed/serum/400/400',
     isFeatured: false,
@@ -85,8 +86,8 @@ export const products: Product[] = [
   },
   {
     id: 8,
-    name: 'Infusion Bio "Douce Nuit"',
-    price: 9.90,
+    name: 'mazaaaal"',
+    price: 0.00,
     category: 'Bien-être',
     imageUrl: 'https://picsum.photos/seed/infusion/400/400',
     isFeatured: true,
@@ -95,8 +96,9 @@ export const products: Product[] = [
   },
    {
     id: 9,
-    name: 'Crème Mains Réparatrice au Karité',
-    price: 12.50,
+    name: 'mazaaaaaaaaaaaaaaaaaal',
+    // FIX: Corrected invalid number format for price.
+    price: 0.00,
     category: 'Beauté',
     imageUrl: 'https://picsum.photos/seed/handcream/400/400',
     isFeatured: false,
@@ -105,8 +107,9 @@ export const products: Product[] = [
   },
   {
     id: 10,
-    name: 'Parure de Lit en Lin Lavé',
-    price: 120.00,
+    name: 'mazaaaaaaaaal',
+    // FIX: Corrected invalid number format for price.
+    price: 0.00,
     category: 'Maison',
     imageUrl: 'https://picsum.photos/seed/bedding/400/400',
     isFeatured: false,
@@ -115,8 +118,9 @@ export const products: Product[] = [
   },
   {
     id: 11,
-    name: 'Foulard en Soie Végétale',
-    price: 32.00,
+    name: 'mazaaaaaaaaal',
+    // FIX: Corrected invalid number format for price.
+    price: 0.00,
     category: 'Accessoires',
     imageUrl: 'https://picsum.photos/seed/scarf/400/400',
     isFeatured: true,
@@ -125,8 +129,9 @@ export const products: Product[] = [
   },
   {
     id: 12,
-    name: 'Coffret de Relaxation Aromathérapie',
-    price: 49.90,
+    name: 'ajoutez votre article ',
+    // FIX: Corrected invalid number format for price.
+    price: 0.00,
     category: 'Bien-être',
     imageUrl: 'https://picsum.photos/seed/relaxbox/400/400',
     isFeatured: false,
